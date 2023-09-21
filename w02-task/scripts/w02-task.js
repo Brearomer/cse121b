@@ -6,7 +6,7 @@
 /* Step 2 - Variables */
 let fullName = 'Brea Romer';
 let currentYear = '2023';
-let profilePicture = 'images/profilepicture.jpg';
+let profilePicture = 'w02-task/images/profilepicture.jpg';
 
 
 /* Step 3 - Element Variables */
