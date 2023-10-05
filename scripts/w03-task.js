@@ -23,7 +23,7 @@ document.getElementById('addNumbers').addEventListener('click', addNumbers);
 const subtractNumbers = function (){
    let subtract1 = Number(document.getElementById('subtract1').value);
    let subtract2 = Number(document.querySelector('#subtract2').value);
-   document.getElementById('difference').innerHTML = subtract(subtract1, subtract2);
+   document.getElementById('difference').value = subtract(subtract1, subtract2);
 } 
 
 document.getElementById('subtractNumbers').addEventListener('click', subtractNumbers);
@@ -38,7 +38,7 @@ document.getElementById('subtractNumbers').addEventListener('click', subtractNum
   const multiplyNumber = function (){
    let multiply = Number(document.getElementById('factor1').value);
    let subtract2 = Number(document.querySelector('#factor2').value);
-   document.getElementById('product').innerHTML = product(factor1, factor2);
+   document.getElementById('product').value = product(factor1, factor2);
 } 
 
 document.getElementById('multiplyNumbers').addEventListener('click', multiplyNumbers);
@@ -52,15 +52,12 @@ document.getElementById('multiplyNumbers').addEventListener('click', multiplyNum
 const divideNumbers = function (){
    let dividend = Number(document.getElementById('dividend').value);
    let divisor = Number(document.querySelector('#divisor').value);
-   document.getElementById('quotient').innerHTML = subtract(dividend, divisor);
+   document.getElementById('quotient').value = subtract(dividend, divisor);
 } 
 
 document.getElementById('divideNumbers').addEventListener('click', divideNumbers);
     
   
-   
-    
-
 /* Decision Structure */
  let today = new Date();
  let currentYear ="";
@@ -72,16 +69,14 @@ document.getElementById('divideNumbers').addEventListener('click', divideNumbers
 /* ARRAY METHODS - Functional Programming */
  let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 /* Output Source Array */
- document.querySelector('#array').innerHTML =
+ document.querySelector('#array').innerHTML = numbersArray
 /* Output Odds Only Array */
 document.querySelector('#odds').innerHTML = numbersArray.filter(number => number % 2 === 1);
 /* Output Evens Only Array */
   document.querySelector('#evens').innerHTML = numbersArray.filter(number => number % 2 === 0);
 /* Output Sum of Org. Array */
- numbersArray.reduce((sum, number) => sum + number)
+ document.querySelector('#sumOfArray').innerHTML= numbersArray.reduce((sum, number) => sum + number)
 /* Output Multiplied by 2 Array */
- numbersArray.map(number => number * 2)
+ document.querySelector('#multiplied').innerHTML= numbersArray.map(number => number * 2)
 /* Output Sum of Multiplied by 2 Array */
- let numbers_Array = numbersArray.map((numbers_Array) =>numbers_Array);
- numbersArray.reduce((total, numbersArray) => total +sumOfMultiplied , 2)/ numbers_Array; 
- 
+ document.querySelector('#sumOfMultiplied').innerHTML= numbersArray.map(number => number *2).reduce((sum,number) => sum + number)
