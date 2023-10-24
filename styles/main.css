@@ -297,4 +297,138 @@ footer{
    }
 
     
+} 
+ /* Project */
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ 
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+   
+body{
+   background-color:darkgrey;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden; 
+   height:100vh;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}   
+
+.container{
+    padding: 20px;
+    color:white;
+
+} 
+
+.current-info{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date-container.time{
+      font-size: 70px;
+      font-weight: 100;
+} 
+ .date-container #am-pm{
+     font-size:30px;
+     margin-left: 20px;
+
+} 
+
+.date-container.date{
+     font-size: 30px;
+} 
+
+.place-container .time-zone{
+     font-size: 30px;
+     font-weight: 100;
+} 
+
+.place-container .country{
+     font-size: 12px;
+     font-weight: 700;
+} 
+
+.current-info .others{
+    display:flex;
+    flex-direction: column;   
+    background-color: rgba(24,24,27,0.6);
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border:1px solid #eee;
+} 
+
+.current-info .others .weather-item{
+     display:flex;
+     justify-content: space-between; 
+     
+} 
+
+.future-forecast{
+     background:rgba(24,24,27,0.8);
+     padding: 25px;
+     position:fixed;
+     bottom:0;
+     color:white;
+     width: 100%;
+     align-items: center; 
+     justify-content: center;
+} 
+
+.future-forcast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.future-forcast .today .day{
+     padding:5px 15px;
+     background: #444;
+     border-radius: 50px;
+     text-align: center;
+} 
+
+.future-forcast .today .tempa{
+     font-size: 40px;
+     padding-top: 15px;
+}
+
+.future-forecast .weather-forcast{
+    display:flex;
+} 
+
+.weather-forcast .weather-forcast-item{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 0 10px;
+     border: 1px solid white;
+     border-radius:10px;
+     padding:15px;
+} 
+
+.weather-forcast .weather-forcast-item .day{
+    padding: 5px 15px;
+    background: #777;
+    border-radius:50px; 
+    text-align: center;
+}  
+
+.weather-forcast .weather-forcast-item .temp{
+      font-weight:100;
+} 
+
+@media  only screen and (max-width:730px){
+    .future-forcast{
+        justify-content: start;
+        align-items:none;
+        overflow-y: scroll;
+        
+ }
 }
