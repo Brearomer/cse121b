@@ -8,88 +8,30 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="container">
-      <div class="current-info">
-
-           <div class="date-continer">
-               <div class="time" id="time">
-                1:47 <span id="am-pm"></span>
-            </div>
-            <div class="date" id="date">
-             Monday, 23 October
-           </div>
-              
-             <div class="others" id="current-weather-items">
-                 <div class="weather-item">
-                    <div>Humidity</div>
-                    <div>95.3%</div>
-                 </div>                  
-                 <div class="weather-item">
-                     <div>Pressure</div>
-                      <div>123</div>
-             </div>
-               <div class="weather-item"></div>
-                    <div>Wind Speed</div>
-                    <div>223</div> 
-            </div>
-
-        </div>
-
-   </div>
-      <div class="place-container">
-          <div class="time-zone" id="time-zone">Bahamas/United States</div>
-          <div id="country" class="country">IN</div>
-     </div>
-     <div class="future forecast"></div>
-          <div class="today" id="current-temp">
-             <img src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w icon">
-             <div class="day">Monday</div>
-             <div class="temp">Night - 10.5  C </div>
-             <div class="temp">Day - 35.7 C</div>
-   </div>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html">W5  Task</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+        </ul>
+    </nav>
    
-    <div class="weather-forecast" id="weather-forcast">
-        <div class="weather-forcast-item">
-            <img src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w icon">
-            <div class="day">Tues</div>
-            <div class="temp">Night - 10.5 C </div>
-            <div class="temp">Day - 35.7 C</div>
-       </div>
-        <div class="weather-forecast-item">
-            <img src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w icon">
-            <div class="day">Wednes</div>
-            <div class="temp">Night - 10.5 C </div>
-            <div class="temp">Day - 35.7 C</div>
-        </div>
-        <div class="weather-forecast-item">
-            <img src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w icon">
-            <div class="day">Thurs</div>
-            <div class="temp">Night - 10.5 C </div>
-            <div class="temp">Day - 35.7 C</div>
-        </div> 
-        <div class="weather-forecast-item">
-            <img src=" https://openweathermap.org/img/wn/10d@2x.png"  alt="weather icon" class="w icon">
-            <div class="day">Fri</div>
-            <div class="temp">Night - 10.5 C </div>
-            <div class="temp">Day - 35.7 C</div>
-        </div>
-        <div class="weather-forecast-item">
-            <img src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w icon">
-            <div class="day">Sat</div>
-            <div class="temp">Night - 10.5 C </div>
-            <div class="temp">Day - 35.7 C</div>
-        </div>
-        <div class="weather-forecast-item">
-            <img src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w icon">
-            <div class="day">Sun</div>
-            <div class="temp">Night - 10.5 C </div>
-            <div class="temp">Day - 35.7 C</div>
-        </div>
-     </div>
+  <h1>Final Project CSE121b</h1>
+  
+       <ul id="timezone"></ul>
+            <ul id="timezone_abbreviation"></ul>
+            <ul id="elevation"></ul>
+            <ul id="hourly_units"></ul>
+            <ul id="temperature_2m"></ul> 
+            
+            
+   
 
-</div>
-
-   <script src="/scripts/project.js"></script>
+   <script src="scripts/project.js"></script>
   
     
 </body>
