@@ -14,7 +14,7 @@ const link = document.getElementById('weatherList');
 
 const getWeather = async() =>{
      const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m")
-        console.weatherList = await response.json();
+        const weatherList = await response.json();
        console.log (weatherList);
        console.log (weatherList.hourly.time);  
        console.log(weatherList.hourly.temperature_2m);
