@@ -8,7 +8,7 @@ const temperature_2m = document.getElementById('temperature_2m');
 const link = document.getElementById('weatherList');
 
 
-
+export const BASE_API_URL ='https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m"';
 
  
 
